@@ -4,9 +4,6 @@ MAINTAINER Hiroaki Yamamoto
 RUN pacman -S --noconfirm mongodb
 
 RUN mkdir /db
-VOLUME /db
-VOLUME /var/log/mongodb
-RUN chown mongodb:daemon /db
 COPY mongodb.sh /bin
 COPY mongodb.conf /etc
 RUN chown root:root /bin/mongodb.sh
