@@ -1,3 +1,3 @@
 #!/bin/sh
 
-mongod -f "/etc/mongodb.conf"
+mongod -f "/etc/mongodb.conf" ${@}
