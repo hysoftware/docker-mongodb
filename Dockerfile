@@ -1,7 +1,7 @@
 FROM hysoftware/baseimage
 MAINTAINER Hiroaki Yamamoto
 
-RUN pacman -S --noconfirm mongodb
+RUN pacman -S --noconfirm mongodb mongodb-tools
 
 RUN mkdir /db
 VOLUME /db
